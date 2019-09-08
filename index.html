@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Atikur Rahman</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blueimp-gallery.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+  <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      <!-- The container for the modal slides -->
+      <div class="slides"></div>
+      <!-- Controls for the borderless lightbox -->
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+
+      <ol class="indicator"></ol>
+      <!-- The modal dialog, which will be used to wrap the lightbox content -->
+      <div class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body next"></div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default pull-left prev">
+                          <i class="glyphicon glyphicon-chevron-left"></i>
+                          Previous
+                      </button>
+                      <button type="button" class="btn btn-primary next">
+                          Next
+                          <i class="glyphicon glyphicon-chevron-right"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-chevron-up"></i>  <span class="light">Atikur Rahman</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#print">Print</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#web">Web</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">I love to create maps.</h1>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                <!-- <p>I am excited by opportunities to collect and utilize geospatial and programmatic data to empower decision-makers.</p>
+                <p>I want to leverage technology and develop my skills to address the fascinating challenges in disseminating information to improve the effectiveness and accountability of humanitarian programs.</p>
+                <p>I'm currently working for the Red Cross and supporting their international programs and disaster response activities. My current interests include using code to make things <a href="https://github.com/danbjoseph/twitter-daily-timelapse" target="_blank">do things</a>, <a href="https://danbjoseph.github.io/drones" target="_blank">DIY drones for mapping</a>, mobile data collection using <a href="https://github.com/posm" target="_blank">POSM</a>, node.js web applications, D3.js, <a href="https://www.mapillary.com/app/user/danbjoseph?lat=38.906648&lng=-76.991839&z=12.19&username%5B%5D=danbjoseph" target="_blank">Mapillary</a>, and <a href="http://hdyc.neis-one.org/?danbjoseph" target="_blank">OpenStreetMap.</a></p> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Print Section -->
+    <section id="print" class="content-section text-center">
+
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Print</h2>
+          <p>Some of the maps I've made.</p>
+        </div>
+      </div>
+
+      <div id="links" class="container text-center column-narrow" >
+
+        <!-- <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/2013-12-26_StaffLocations_v2.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/2013-12-26_StaffLocations_v2_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/DREF_Hagupit_20141213.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/DREF_Hagupit_20141213_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/Haiyan_MovementWsMap_2014-11-12.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/Haiyan_MovementWsMap_2014-11-12_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/MovementUnconditionalCash_2014-06-29.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/MovementUnconditionalCash_2014-06-29_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/Poverty-Population_Hagupit-Bicol_A3_20141208.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/Poverty-Population_Hagupit-Bicol_A3_20141208_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/2014-01-02_MovementPartners.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/2014-01-02_MovementPartners_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/Panay_HousesDestroyed_20140130.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/Panay_HousesDestroyed_20140130_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/Panay_Brgy4P_20140130.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/Panay_Brgy4P_20140130_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/Hagupit_NDRRMC_MunicipalityHousesDamaged-Totally_A3_20141214.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/Hagupit_NDRRMC_MunicipalityHousesDamaged-Totally_A3_20141214_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/CashPlan_Tolosa_20140130.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/CashPlan_Tolosa_20140130_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/OSM_ReliefPlanning2.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/OSM_ReliefPlanning2_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/2013-01-19_GermanWatSanTentDulagLeyte_1.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/2013-01-19_GermanWatSanTentDulagLeyte_1_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/2015-05-02_NRCS_distributions_tarps-blankets.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/2015-05-02_NRCS_distributions_tarps-blankets_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/NPL_GlobalERUDeployments_2015-08-08.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/NPL_GlobalERUDeployments_2015-08-08_thumb.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/VUT_RC_areasOfResponse_overview.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/VUT_RC_areasOfResponse_overview_thumb.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-xs-4 portfolio-print-item">
+          <a href="img/maps/ISD_Overview_Africa_FY16_20150910.jpg" class="portfolio-print-link" data-gallery>
+            <div class="portfolio-print-hover">
+              <div class="portfolio-print-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-circle print-thumbnail img-responsive" src="img/maps/thumbnails/ISD_Overview_Africa_FY16_20150910_thumb.jpg" alt="">
+          </a>
+        </div> -->
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Web Section -->
+    <section id="web" class="content-section">
+
+            <div class="container text-center">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Web</h2>
+                    <p>Some of the web things I've made.</p>
+                </div>
+            </div>
+
+            <div class="container column-narrow" >
+
+              <div class="row">
+                <div class="col-sm-4 portfolio-web-item">
+                    <a href="https://arsharif.github.io/dhaka.github.io/" target="_blank" class="portfolio-web-link">
+                        <div class="portfolio-web-hover">
+                            <div class="portfolio-web-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/webs/dhaka-stories.png" class="img-responsive web-thumbnail" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-8 portfolio-web-caption">
+                  <h4>Map Dhaka</h4>
+                  <p class="text-muted">An initiative for field operation monitoring and reporting.</p>
+                </div>
+              </div>
+
+              <hr class="custom-hr">
+
+              <!-- <div class="row">
+                <div class="col-sm-4 portfolio-web-item">
+                    <a href="https://americanredcross.github.io/ttl-imagery/" target="_blank" class="portfolio-web-link">
+                        <div class="portfolio-web-hover">
+                            <div class="portfolio-web-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/webs/ttl-imagery.png" class="img-responsive web-thumbnail" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-8 portfolio-web-caption">
+                  <h4>Imagery viewer</h4>
+                  <p class="text-muted">A viewer for drone and Mapillary imagery collected in project areas for Tindog Tabang Leyteño, a Typhoon Haiyan recovery program in the Philippines. There is a Missing Maps <a href="http://www.missingmaps.org/blog/2017/07/27/drone-and-street-level-imagery-in-philippines/" target="_blank">blog post</a> about the imagery.</p>
+                </div>
+              </div>
+
+              <hr class="custom-hr">
+
+              <div class="row">
+                <div class="col-sm-4 portfolio-web-item">
+                    <a href="http://danbjoseph.github.io/yolanda_recovery/" target="_blank" class="portfolio-web-link">
+                        <div class="portfolio-web-hover">
+                            <div class="portfolio-web-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/webs/yolanda_recovery.png" class="img-responsive web-thumbnail" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-8 portfolio-web-caption">
+                  <h4>Yolanda recovery</h4>
+                  <p class="text-muted">An interactive map and table to explore the data by sector and area on recovery accomplishments after Typhoon Yolanda, known internationally as Haiyan.</p>
+                </div>
+              </div>
+
+              <hr class="custom-hr">
+
+              <div class="row">
+                <div class="col-sm-4 portfolio-web-item">
+                    <a href="http://americanredcross.github.io/evd_village-survey/" target="_blank" class="portfolio-web-link">
+                        <div class="portfolio-web-hover">
+                            <div class="portfolio-web-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/webs/evd_village-survey.png" class="img-responsive web-thumbnail" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-8 portfolio-web-caption">
+                  <h4>Village survey</h4>
+                  <p class="text-muted">A simple search and map to explore the data from a survey of villages.</p>
+                </div>
+              </div>
+
+              <hr class="custom-hr">
+
+              <div class="row">
+                <div class="col-sm-4 portfolio-web-item">
+                    <a href="http://philippineredcross.github.io/adb-health/" target="_blank" class="portfolio-web-link">
+                        <div class="portfolio-web-hover">
+                            <div class="portfolio-web-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/webs/adb-health.png" class="img-responsive web-thumbnail" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-8 portfolio-web-caption">
+                  <h4>Health facility recovery</h4>
+                  <p class="text-muted">An interactive map to show the planned assistance to health facilities in Leyte and Samar after Typhoon Haiyan.</p>
+                </div>
+              </div>
+
+              <hr class="custom-hr">
+
+              <div class="row">
+                <div class="col-sm-4 portfolio-web-item">
+                    <a href="http://americanredcross.github.io/haiyan_mapfolio" target="_blank" class="portfolio-web-link">
+                        <div class="portfolio-web-hover">
+                            <div class="portfolio-web-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/webs/haiyan_mapfolio.png" class="img-responsive web-thumbnail" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-8 portfolio-web-caption">
+                  <h4>Haiyan mapfolio</h4>
+                  <p class="text-muted">A searchable repository of map products made for the response in the Philippines to Typhoon Haiyan in November 2013.</p>
+                </div>
+              </div>
+
+              <hr class="custom-hr">
+
+              <div class="row">
+                <div class="col-sm-4 portfolio-web-item">
+                    <a href="http://americanredcross.github.io/nepal-maps/" target="_blank" class="portfolio-web-link">
+                        <div class="portfolio-web-hover">
+                            <div class="portfolio-web-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/webs/nepal-maps.png" class="img-responsive web-thumbnail" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-8 portfolio-web-caption">
+                  <h4>Nepal maps</h4>
+                  <p class="text-muted">A searchable repository of map products made for the response in Nepal to the earthquakes in 2015.</p>
+                </div>
+              </div>
+
+              <hr class="custom-hr"> -->
+
+            </div>
+
+
+
+    </section>
+
+<!--
+    http://americanredcross.github.io/HAP-sectors/
+    http://americanredcross.github.io/evd_village-survey/
+    http://philippineredcross.github.io/haiyan-one-year/
+  -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Get in touch</h2>
+                <p><a href="mailto:arahman.dcc2@gmail.com">arahman.dcc2@gmail.com</a></p>
+                <p><ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/atik_vi" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i>&nbsp <span class="network-name">Twitter</span></a>
+                    </li>
+                   <!--  <li>
+                        <a href="https://github.com/danbjoseph" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>&nbsp <span class="network-name">Github</span></a>
+                    </li> -->
+                    <li>
+                        <a href="https://www.linkedin.com/in/atikur-rahman-a81104128" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i>&nbsp <span class="network-name">LinkedIn</span></a>
+                    </li>
+                </ul></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div style="height:200px;"></div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
