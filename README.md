@@ -1,1 +1,1 @@
-http://atik.mapbd.xyz/
+https://atik.mapbd.xyz/
