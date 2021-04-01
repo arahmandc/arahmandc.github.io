@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /team/
+---
+
+<div>
+  <h3>{{site.name}}</h3>
+  <h1>Who we are</h1>
+  
+  <div>
+    {% for member in site.team %}
+      <div class="team-member-box">
+        <h2>
+          <span class="team-member-name"><!-- <a href="{{ member.url }}"> -->{{ member.name }}<!-- </a> -->  </span>
+          <span>{{ member.position }}</span>
+        </h2>
+        {% if member.image %}
+        <img width="200px" style="float:left; margin-right: 16px;" src=" {{ member.image }}">
+        {% endif %}
+        <p>{{ member.content }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>

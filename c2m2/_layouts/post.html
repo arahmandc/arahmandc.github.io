@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+
+<div>
+  <h1 >{{ page.title | escape }}</h1>
+  <p class="post-meta">
+    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" >
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {{ page.date | date: date_format }}
+    </time>
+  </p>
+  {% if page.image %}
+    <div>
+      <img src='{{ page.image }}');">
+      {% if page.caption %}
+      <br><span class="post-caption">{{page.caption}}</span>
+      {% endif %}
+    </div>
+
+  {% endif %}
+</div>
+
+<div class="post-content section-padding">
+  {{ content }}
+</div>
+
+{% if page.author %}
+  <hr class="sep"/>
+  <div class="section-padding"> 
+    {% for author in page.author %}
+      {% assign authorDetails = site.author | where:"name", author %}
+      {% if forloop.first == true %}
+        <span>Posted by 
+      {% else %}
+        <span>and 
+      {% endif %}
+        {{ author }}
+      </span>    
+    {% endfor %}
+  </div>
+{% endif %}
