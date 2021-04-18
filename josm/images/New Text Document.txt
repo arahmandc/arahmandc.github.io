@@ -1,0 +1,20 @@
+JOSM is a free software desktop editing tool for OpenStreetMap geodata created in Java, originally developed by Immanuel Scholz and currently maintained by Dirk Stöcker. The editing tool contains advanced features that are not present in OSM's default online editor, iD.
+
+The first changeset was created on 27 September 2005. The first beta version (which required Java 5) was made available on 4 October 2005 and JOSM 1.0 was released on 22 January 2006. The current versioning scheme, using code changeset number, was introduced in 2008.
+
+=== Topologically Integrated Geographic Encoding and Referencing
+
+Topologically Integrated Geographic Encoding and Referencing, or TIGER, or TIGER/Line is a format used by the United States Census Bureau to describe land attributes such as roads, buildings, rivers, and lakes, as well as areas such as census tracts. TIGER was developed to support and improve the Bureau's process of taking the Decennial Census.
+
+The TIGER files do not contain the census demographic data, but merely the geospatial/map data. GIS can be used to merge census demographics or other data sources with the TIGER files to create maps and conduct analysis. TIGER data is available without cost because U.S. Government publications are required to be released into the public domain.
+
+=== Some notable features
+
+* JOSM are importing GPX files (GPS tracks)
+* Working with aerial imagery (including WMS, TMS and WMTS protocols)
+* Support for multiple cartographic projections, layers, relations editing
+* Data validation tools
+* Data filtering
+* Offline work
+* 3D Viewing
+* There are more than 100 plugins
