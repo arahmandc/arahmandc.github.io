@@ -1,19 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
-/**
- * RedCross theme for reveal.js.
- *
- * Copyright (C) 2013 Dale Kunce & American Red Cross, http://redcross.org;
- */
-/*********************************************
- * GLOBAL STYLES
- *********************************************/
+
+/*Customized theme for reveal.js
+*
+* Copyright (C) Atikur Rahman & MapBD.xyz;*/
+
+
 body {
   background: #111111;
   background-color: #111111; }
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 200;
   letter-spacing: -0.02em;
@@ -64,7 +62,7 @@ body {
 
 .reveal .roll span:after {
   color: #fff;
-  background: #ED1B2E; }
+  background: #F20807; }
 
 /*********************************************
  * IMAGES
@@ -82,7 +80,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #ED1B2E;
+  border-color: #F20807;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -90,19 +88,19 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #ED1B2E; }
+  border-right-color: #F20807; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #ED1B2E; }
+  border-left-color: #F20807; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #ED1B2E; }
+  border-bottom-color: #F20807; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #ED1B2E; }
+  border-top-color: #F20807; }
 
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #f3d7ac; }
@@ -123,23 +121,10 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #ED1B2E;
+  background: #F20807;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); 
-}
-
-/*********************************************
- * Logo Image
- *********************************************/
-.redcross_logo {
-  position:absolute;
-  top:5px;
-  right:5px;
-  z-index:9999;
-  width:215px;
-  height:70px;
-  background: url('../img/redcross-logo_light.png') no-repeat 0 0;
 }
